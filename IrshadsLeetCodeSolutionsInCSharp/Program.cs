@@ -14,10 +14,11 @@ namespace IrshadsLeetCodeSolutionsInCSharp
                 Console.Clear();  // Clear the screen for a fresh menu display
                 Console.WriteLine("Welcome to Irshad's LeetCode Solutions in C#!");
                 Console.WriteLine("Choose a problem to run by entering its ID:");
+                Console.WriteLine("Remember: Debugging and understanding the problem logic is key to mastering coding!");
                 Console.WriteLine("1. TwoSum");
                 Console.WriteLine("0. Exit");
 
-                string choice = Console.ReadLine();
+                string choice = Console.ReadLine() ?? string.Empty; ;
 
                 switch (choice)
                 {

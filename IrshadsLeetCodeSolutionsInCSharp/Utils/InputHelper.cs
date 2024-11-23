@@ -11,13 +11,24 @@ namespace IrshadsLeetCodeSolutionsInCSharp.Utils
         public static int[] ReadIntArray()
         {
             Console.WriteLine("Enter integers separated by spaces:");
-            return Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            string? input = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                Console.WriteLine("No input provided. Returning an empty array.");
+                return Array.Empty<int>(); 
+            }
+            return input.Split(' ').Select(int.Parse).ToArray();
         }
 
         public static int ReadInt()
         {
             Console.WriteLine("Enter an integer:");
-            return int.Parse(Console.ReadLine());
+            string? input = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                throw new ArgumentException("Input cannot be null or empty.");
+            }
+            return int.Parse(input);
         }
     }
 }
