@@ -1,5 +1,6 @@
 ﻿using System;
 using IrshadsLeetCodeSolutionsInCSharp.Problems.Arrays.Easy;
+using IrshadsLeetCodeSolutionsInCSharp.Problems.HashTable.Easy;
 
 namespace IrshadsLeetCodeSolutionsInCSharp
 {
@@ -12,10 +13,13 @@ namespace IrshadsLeetCodeSolutionsInCSharp
             while (continueRunning)
             {
                 Console.Clear();  // Clear the screen for a fresh menu display
-                Console.WriteLine("Welcome to Irshad's LeetCode Solutions in C#!");
+                Console.WriteLine("Welcome to Irshad's LeetCode Solutions in C#!");                
+                Console.WriteLine("Remember: Debugging and understanding the problem logic is key to mastering coding!\n");
+                Console.WriteLine("########################## MOST IMP PART BELOW ##########################");
+                Console.WriteLine("Each class file holds the problem description and examples. The goal? Think, Solve, debug, and conquer coding challenges like a pro!\n");
                 Console.WriteLine("Choose a problem to run by entering its ID:");
-                Console.WriteLine("Remember: Debugging and understanding the problem logic is key to mastering coding!");
                 Console.WriteLine("1. TwoSum");
+                Console.WriteLine("13. RomanToInteger (2 approach - chk code)");
                 Console.WriteLine("0. Exit");
 
                 string choice = Console.ReadLine() ?? string.Empty; ;
@@ -25,7 +29,9 @@ namespace IrshadsLeetCodeSolutionsInCSharp
                     case "1":
                         TwoSumSolution.RunExample();
                         break;
-
+                    case "13":
+                        RomanToInteger.RunExample();
+                        break;
                     case "0":
                         continueRunning = false;  // Exit the loop and close the program
                         Console.WriteLine("Exiting... Thank you for using Irshad's LeetCode Solutions!");
