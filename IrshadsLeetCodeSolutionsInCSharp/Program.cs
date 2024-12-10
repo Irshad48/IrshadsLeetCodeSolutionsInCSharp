@@ -22,6 +22,7 @@ namespace IrshadsLeetCodeSolutionsInCSharp
                 Console.WriteLine("1. TwoSum");
                 Console.WriteLine("13. RomanToInteger (2 approach - chk code)");
                 Console.WriteLine("14. LongestCommonPrefix (2 approach - chk code)");
+                Console.WriteLine("20. ValidParanthesis ");
                 Console.WriteLine("0. Exit");
 
                 string choice = Console.ReadLine() ?? string.Empty; ;
@@ -36,6 +37,9 @@ namespace IrshadsLeetCodeSolutionsInCSharp
                         break;
                     case "14":
                         LongestCommonPrefix.RunExample();
+                        break;
+                    case "20":
+                        ValidParanthesis.RunExample();
                         break;
                     case "0":
                         continueRunning = false;  // Exit the loop and close the program
