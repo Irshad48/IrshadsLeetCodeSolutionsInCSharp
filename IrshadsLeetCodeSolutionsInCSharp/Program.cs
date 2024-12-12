@@ -1,6 +1,7 @@
 ﻿using System;
 using IrshadsLeetCodeSolutionsInCSharp.Problems.Arrays.Easy;
 using IrshadsLeetCodeSolutionsInCSharp.Problems.HashTable.Easy;
+using IrshadsLeetCodeSolutionsInCSharp.Problems.LinkedList.Easy;
 using IrshadsLeetCodeSolutionsInCSharp.Problems.String.Easy;
 
 namespace IrshadsLeetCodeSolutionsInCSharp
@@ -23,6 +24,7 @@ namespace IrshadsLeetCodeSolutionsInCSharp
                 Console.WriteLine("13. RomanToInteger (2 approach - chk code)");
                 Console.WriteLine("14. LongestCommonPrefix (2 approach - chk code)");
                 Console.WriteLine("20. ValidParanthesis ");
+                Console.WriteLine("21. MergeTwoSortedList ");
                 Console.WriteLine("0. Exit");
 
                 string choice = Console.ReadLine() ?? string.Empty; ;
@@ -40,6 +42,9 @@ namespace IrshadsLeetCodeSolutionsInCSharp
                         break;
                     case "20":
                         ValidParanthesis.RunExample();
+                        break;
+                    case "21":
+                        MergeTwoSortedList.RunExample();
                         break;
                     case "0":
                         continueRunning = false;  // Exit the loop and close the program
